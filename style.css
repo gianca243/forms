@@ -4,3 +4,6 @@
 .wow:hover{
     background-color: cadetblue;
 }
+input [value]:hover{
+    background-color: cornflowerblue;
+}

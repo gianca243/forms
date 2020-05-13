@@ -5,10 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="jumbotron text-center">
+        <h1>Formulario</h1>
+        <p>Tarea formulario</p>
+      </div>
+
     
+    <form>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4 p-3 ">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+              </div>
+              <div class="col-sm-4 pl-4 pt-3 pb-3 pr-4">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+              </div>
+              <div class="col-sm-4 p-3 pad">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="col-sm-4">
+                <select id="cars" name="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <select name="cars" size="4" multiple>
+                    <option value="crepas">crepas</option>
+                    <option value="bebida">bebida</option>
+                    <option value="hot dog">hot dog</option>
+                    <option value="postre">postre</option>
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <textarea name="message" rows="10" cols="30">The cat was playing in the garden.
+                </textarea>
+              </div>
+            </div>
+            
+
+            </div>
+            <div class="row ">
+                <div class=" col-sm-4" >
+                    <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    <input type="submit">
+                </div>
+                <div class="col-sm-4 ">
+                    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                </div>
+                <div class="col-sm-4">
+                    <input list="browsers" name="browser">
+                    <datalist id="browsers">
+                        <option value="Internet Explorer">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                    <input type="submit">
+              </div>
+                
+           </div>
+        </div>        
+      </form>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

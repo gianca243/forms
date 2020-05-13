@@ -18,10 +18,10 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./registro.html">Registro</a>
+                <a class="nav-link" href="#">Registro</a>
             </li>
         </ul>
         <form action="#" class="form-inline">
@@ -33,7 +33,7 @@
 </nav>
     <div class="jumbotron text-center">
         <h1>Formulario</h1>
-        <h2>Iniciar sesion</h2>
+        <h2>Registro</h2>
         <p>Tarea formulario</p>
       </div>
 
@@ -41,20 +41,44 @@
     <form>
         <div class="container">
             <div class="row">
-              <div class="col-12 p-3 ">
+              <div class="col-sm-4 p-3 ">
+                <label for="fname">Primer nombre:</label><br>
+                <input class="form-control" type="text" id="fname" name="fname"><br>
+                <label for="lname">Apellido:</label><br>
+                <input class="form-control" type="text" id="lname" name="lname"><br>
                 <label for="lname">Nickname</label><br>
                 <input class="form-control" type="text" id="lname" name="lname"><br>
                 <label for="lname">Contraseña</label><br>
                 <input class="form-control" type="text" id="lname" name="lname">
-              </div>      
-              <div class="col-sm-8 ">
-                  <button class="btn btn-primary mr-3 form-control wow" type="button" onclick="alert('Usuario autenticado')">Ingresar</button>
               </div>
-              <div class="col-sm-4 ">
-                <a href="./registro.html">
-                <button class="btn btn-primary mr-3 form-control wow" type="button" onclick="">Registrarse</button>
-                </a>
-            </div>
+              <div class="col-sm-4 pl-4 pt-3 pb-3 pr-4">
+                <label for="fname">Genero</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+               
+                <div class="pt-4">
+                  <p>Perfil</p>
+                  <select class="form-control" id="cars" name="cars">
+                    <option value="volvo">Estudiante</option>
+                    <option value="saab">Profesional</option>
+                    <option value="fiat" selected>Profesional E.</option>
+                    <option value="audi">Magister</option>
+                </select>
+                </div>
+                
+              </div>
+              <div class="col-sm-4 p-3 pad">
+                <p>Fortalezas</p>
+                <textarea class="form-control" name="message" rows="10" cols="30">Descripcion
+                </textarea>
+              </div>            
+              <div class="col-sm-12 ">
+                  <button class="btn btn-primary mr-3 form-control wow" type="button" onclick="alert('Usuario registrado')">Registrarse</button>
+              </div>
               
               </div>
            </div>
